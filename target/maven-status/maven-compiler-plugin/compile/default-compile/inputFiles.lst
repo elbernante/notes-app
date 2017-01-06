@@ -1,0 +1,4 @@
+/vagrant/notes-app/src/main/java/com/codingchallenge/model/NotesDao.java
+/vagrant/notes-app/src/main/java/com/codingchallenge/model/Note.java
+/vagrant/notes-app/src/main/java/com/codingchallenge/App.java
+/vagrant/notes-app/src/main/java/com/codingchallenge/model/JsonTransformer.java

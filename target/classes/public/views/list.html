@@ -1,0 +1,26 @@
+<nav aria-label="page navigation top">
+  <ul class="pager">
+    <li class="previous {{prevDisabled}}" ng-click="prevPage()"><a><span aria-hidden="true">&larr;</span> Newer</a></li>
+    <li>{{currentPage}}</li>
+    <li class="next {{nextDisabled}}" ng-click="nextPage()"><a>Older <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+
+<div class="list-group">
+  <span href="#" class="list-group-item" ng-repeat="issue in issues">
+    <h4 class="list-group-item-heading">{{issue.title}}</h4>
+    <h6 class="list-group-item-text">
+    	<small> Created by: </small><span class="label label-default">{{issue.user.login}}</span>
+    	<small> Assignee: </small><span class="label label-default">{{issue.assignee ? issue.assignee.login : "Unassigned"}}</span>
+    </h6>
+    <p class="list-group-item-text small"><br/>{{issue.body}}</p>
+  </span>
+</div>
+
+<nav aria-label="page navigation bottom">
+  <ul class="pager">
+    <li class="previous {{prevDisabled}}" ng-click="prevPage()"><a><span aria-hidden="true">&larr;</span> Newer</a></li>
+    <li>{{currentPage}}</li>
+    <li class="next {{nextDisabled}}" ng-click="nextPage()"><a>Older <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>

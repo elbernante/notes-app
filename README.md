@@ -140,7 +140,7 @@ will return only the notes that contain the word "milk" in it:
 ]
 ```
 
-### Frontend API
+### Frontend
 The frontend is a single-page app and also served by the same server as the backend. It can be accessed at:
 
 ```
